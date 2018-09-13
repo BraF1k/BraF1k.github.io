@@ -25,14 +25,14 @@ h1, h2, h3, h4, h5, h6, .button,
 
 /*Section header*/
 
-.header-section {
+.header {
     background-size: cover;
     position: relative;
     width: 100%;
     padding-bottom: 64px;
 }
 
-.header__title {
+.header__logo {
     padding-top: 15px;
     padding-bottom: 15px;
     color: #fff;
@@ -40,15 +40,20 @@ h1, h2, h3, h4, h5, h6, .button,
     text-transform: none;
 }
 
+.header__link:hover {
+    color: #fff;
+    text-decoration: none;
+}
 
-.header__item {
+
+.nav__item {
     display: inline-block;
     padding: 0 15px 0 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
-.header__list {
+.nav__list {
     padding: 25px 0 15px 0;
     font-size: 18px;
 }
@@ -60,18 +65,18 @@ h1, h2, h3, h4, h5, h6, .button,
     z-index: 3;
 }
 
-.header__link:hover {
+.nav__item-link:hover {
     text-decoration: none;
     transition: all .5s ease;
     color: #01a0de;
 }
 
-.header__link {
+.nav__item-link {
     color: #fff;
 }
 
 .header__content {
-text-align: center;
+    text-align: center;
     padding-top: 230px;
 }
 
