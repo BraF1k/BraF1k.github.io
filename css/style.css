@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, h6, .button,
     padding-bottom: 15px;
     color: #fff;
     font-family: 'Roboto', sans-serif;
+    text-transform: none;
 }
 
 
