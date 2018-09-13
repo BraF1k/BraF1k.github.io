@@ -194,7 +194,8 @@ text-align: center;
     position: relative;
     background-color: transparent;
     border: 1px solid #ccc;
-    color: #ccc;
+    color: #323e53;
+    padding: 5px;
 }
 
 .contacts__input:focus {
