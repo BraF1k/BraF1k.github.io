@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6, .button,
     font-size: 45px;
 }
 
-.service__fa {
+.service-box__fa {
     font-size: 60px;
     padding-bottom: 20px;
 }
@@ -122,6 +122,10 @@ h1, h2, h3, h4, h5, h6, .button,
 /*Section portfolio*/
 .portfolio-section {
     padding: 100px 0 100px 0;
+}
+
+.portfolio-box {
+    padding-bottom: 30px;
 }
 
 .portfolio {
@@ -133,7 +137,7 @@ h1, h2, h3, h4, h5, h6, .button,
     font-size: 45px;
 }
 
-.portfolio__img {
+.portfolio-box__img {
     max-width: 100%;
     height: auto;
 }
