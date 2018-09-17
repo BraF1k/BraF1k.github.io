@@ -1,7 +1,7 @@
 @media screen and (max-width: 1200px) {
 
     .nav__item {
-        padding: 0 8px 0 8px;
+        padding: 0 10px 0 10px;
     }
 
 }
@@ -16,11 +16,14 @@
         font-size: 35px;
     }
 
-    
+/*
+    .portfolio__img {
+        padding-bottom: 30px;
+    }
+*/
     
     label.hamburger {
         display: block;
-/*        right: 13%;*/
     }
 }
 
@@ -33,34 +36,18 @@
 }
 
 @media screen and (max-width: 576px) {
-    .hello__title {
+    .header-content__title {
         font-size: 12vw;
     }
-    .hello__paragraph {
+    .header__paragraph {
         font-size: 5vw;
     }
 
-    .hello__fadown {
+    .header__fadown {
         font-size: 45px;
     }
     
     .about__title {
         font-size: 35px;
-    }
-    
-}
-
-
-@media (min-width: 768px) {
-    .drawer-list {
-        width: 40vw;
-    }
-}
-
-
-@media (min-width: 768px) {
-    .drawer-list li a {
-        text-align: right;
-        padding: 0.5rem;
     }
 }
