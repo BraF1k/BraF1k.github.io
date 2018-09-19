@@ -37,28 +37,25 @@
 
                       </nav>
                       
-                            <content>
-
-                                <input id="hamburger" class="hamburger" type="checkbox" />
-                                <label class="hamburger" for="hamburger">
-                                <i></i>
-                                    <text>
-                                      <close>close</close>
-                                      <open></open>
-                                    </text>
-                                </label>
-                                <section class="drawer-list">
-                                    <ul>
-                                        <li><a href="#home">Главная</a></li>
-                                        <li><a href="#service">Услуги</a></li>
-                                        <li><a href="#portfolio">Портфолио</a></li>
-                                        <li><a href="#about">Обо мне</a></li>
-                                        <li><a href="#contacts">Контакты</a></li>
-                                    </ul>
-                                </section>
-                            </content>
+                    <div class="button_container" id="toggle">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
                     </div>
 
+                    <div class="overlay" id="overlay">
+                        <nav class="overlay-menu">
+                            <ul>
+                                <li><a href="#home">Главная</a></li>
+                                <li><a href="#service">Услуги</a></li>
+                                <li><a href="#portfolio">Портфолио</a></li>
+                                <li><a href="#about">Обо мне</a></li>
+                                <li><a href="#contacts">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    </div>
 
                 </div>
             </div>
@@ -179,13 +176,13 @@
 
           <form class="contacts__form">
 
-              <input type="name" name="name" class="contacts__input" placeholder="Ваше имя">
+              <input type="name" name="name" class="contacts__input" required placeholder="Ваше имя">
         
-              <input type="email" name="email" class="contacts__input" placeholder="Ваш email">
+              <input type="email" name="email" class="contacts__input" required placeholder="Ваш email">
 
-              <input type="text" name="subject" class="contacts__input"  placeholder="Тема">
+              <input type="text" name="subject" class="contacts__input" required placeholder="Тема">
 
-              <textarea class="contacts__taxtarea" name="message"  placeholder="Сообщение" rows="5"></textarea>
+              <textarea class="contacts__taxtarea" name="message" required placeholder="Сообщение" rows="5"></textarea>
 
               <a href="#" class="contacts__button">Отправить</a>
 

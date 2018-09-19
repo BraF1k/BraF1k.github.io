@@ -5,3 +5,8 @@ $('a[href*="#"]').click(function() {
     }, 400);
     return false;
 });
+
+$('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });

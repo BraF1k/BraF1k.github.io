@@ -16,11 +16,8 @@
         font-size: 35px;
     }
 
-    
-    
-    label.hamburger {
+    .button_container {
         display: block;
-/*        right: 13%;*/
     }
 }
 
