@@ -15,8 +15,19 @@ ul, li {
 h1, h2, h3, h4, h5, h6, .button,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 500;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
+
+.section_padding {
+    padding: 100px 0;
+}
+
+.section__title {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
 
 /*Адаптивное меню*/
 
@@ -24,7 +35,7 @@ h1, h2, h3, h4, h5, h6, .button,
 
 .button_container {
     position: fixed;
-    top: 3.5%;
+    top: 26px;
     right: 2%;
     height: 27px;
     width: 45px;
@@ -199,7 +210,7 @@ h1, h2, h3, h4, h5, h6, .button,
 
 .nav__item {
     display: inline-block;
-    padding: 0 15px 0 15px;
+    padding: 0 14px 0 14px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
@@ -259,7 +270,6 @@ h1, h2, h3, h4, h5, h6, .button,
 
 .service-section {
     background-color: #323e53;
-    padding: 100px 0;
 }
 
 .service {
@@ -267,11 +277,6 @@ h1, h2, h3, h4, h5, h6, .button,
     color: #fff;
 }
 
-.service__title {
-    padding-bottom: 50px;
-    font-size: 45px;
-    text-align: center;
-}
 
 .service-box__fa {
     font-size: 60px;
@@ -279,9 +284,6 @@ h1, h2, h3, h4, h5, h6, .button,
 }
 
 /*Section portfolio*/
-.portfolio-section {
-    padding: 100px 0 100px 0;
-}
 
 .portfolio-box {
     padding-bottom: 30px;
@@ -306,7 +308,6 @@ h1, h2, h3, h4, h5, h6, .button,
 .about {
     background-color: #323e53;
     color: #fff;
-    padding: 70px 0 50px 0;
 }
 
 .about__top {
@@ -321,10 +322,6 @@ h1, h2, h3, h4, h5, h6, .button,
 
 
 /*Section contacts*/
-
-.contacts-section {
-    padding: 100px 0 100px 0;
-}
 
 .contacts__title {
     text-align: center;
@@ -384,7 +381,7 @@ h1, h2, h3, h4, h5, h6, .button,
     width: 100%;
     outline: none;
     background-color: transparent;
-    padding: 15px;
+    padding: 20px;
 }
 
 .contacts__taxtarea:focus {

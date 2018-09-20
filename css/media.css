@@ -1,7 +1,7 @@
 @media screen and (max-width: 1200px) {
 
     .nav__item {
-        padding: 0 8px 0 8px;
+        padding: 0 0 0 10px;
     }
 
 }
@@ -27,6 +27,19 @@
         text-align: center;
         padding-bottom: 20px;
     }
+
+    .overlay ul li {
+        height: calc(100% / 6);
+    }
+
+    .overlay nav {
+        font-size: 40px;
+        top: 60%;
+    }
+
+    .service-box {
+        padding-bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -40,11 +53,28 @@
     .hello__fadown {
         font-size: 45px;
     }
-    
+
     .about__title {
         font-size: 35px;
     }
+
+    .overlay nav {
+        font-size: 35px;
+        top: 60%;
+    }
+
+    .contacts__form {
+        padding: 0 45px 0 45px;
+    }
+
+    .section__title {
+        font-size: 35px;
+        margin-bottom: 60px;
+    }
     
+    .service-box__title {
+        font-size: 30px;
+    }
 }
 
 
