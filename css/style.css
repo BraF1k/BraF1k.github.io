@@ -220,9 +220,6 @@ h1, h2, h3, h4, h5, h6, .button,
     font-size: 18px;
 }
 
-.header__menu {
-
-}
 
 .nav__item-link:hover {
     text-decoration: none;
@@ -287,6 +284,7 @@ h1, h2, h3, h4, h5, h6, .button,
 
 .portfolio-box {
     padding-bottom: 30px;
+    padding-top: 25px;
 }
 
 .portfolio {
@@ -301,6 +299,11 @@ h1, h2, h3, h4, h5, h6, .button,
 .portfolio-box__img {
     max-width: 100%;
     height: auto;
+}
+
+.swiper-container {
+    width: 600px;
+    height: 300px;
 }
 
 /*Section About me*/
