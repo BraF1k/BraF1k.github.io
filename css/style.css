@@ -284,7 +284,7 @@ h1, h2, h3, h4, h5, h6, .button,
 
 .portfolio-box {
     padding-bottom: 30px;
-    padding-top: 25px;
+    padding-top: 50px;
 }
 
 .portfolio {
@@ -302,9 +302,30 @@ h1, h2, h3, h4, h5, h6, .button,
 }
 
 .swiper-container {
-    width: 600px;
-    height: 300px;
+    width: 1480px;
+    height: 320px;
 }
+
+.button-prew::before {
+    content: '>';
+    color: #323e53;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    left: 98%;
+    top: 36%
+}
+.button-next::after {
+    content: '<';
+    color: #323e53;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    left: 1%;
+    top: 36%;
+}
+
+
 
 /*Section About me*/
 

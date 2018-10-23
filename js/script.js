@@ -18,15 +18,19 @@ $('#toggle').click(function() {
     direction: 'horizontal',
     loop: true,
 
+    slidesPerView: 3,
+    spaceBetween: -60,
+
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
 
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.button-prew',
+      prevEl: '.button-next',
     },
 
   });
