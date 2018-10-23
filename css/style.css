@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6, .button,
 
 /*Адаптивное меню*/
 
-@import url(https: //fonts.googleapis.com/css?family=Vollkorn|Roboto);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
 
 .button_container {
     position: fixed;
@@ -302,30 +302,71 @@ h1, h2, h3, h4, h5, h6, .button,
 }
 
 .swiper-container {
-    width: 1480px;
+    width: 85%;
     height: 320px;
 }
 
-.button-prew::before {
-    content: '>';
-    color: #323e53;
-    font-size: 40px;
-    font-weight: bold;
+.button-next {
+    cursor: pointer;
+    height: 40px;
+    position: relative;
+    width: 40px;
+    top: -230px;
+    z-index: 2;
+    left: 20px;
+  }
+
+.button-prew {
+    cursor: pointer;
+    height: 40px;
+    position: relative;
+    width: 40px;
+    top: -185px;
+    z-index: 2;
+    left: 1230px;
+  }
+
+.button-next::before, .button-next::after {
+    content: '';
+    background-color: #fff;
+    width: 16px;
+    height: 4px;
     position: absolute;
-    left: 98%;
-    top: 36%
-}
-.button-next::after {
-    content: '<';
-    color: #323e53;
-    font-size: 40px;
-    font-weight: bold;
-    position: absolute;
-    left: 1%;
-    top: 36%;
+    left: 10%;
+    top: 25px;
+    z-index: 2;
 }
 
+.button-prew::after, .button-prew::before {
+    content: '';
+    cursor: pointer;
+    background-color: #fff;
+    width: 16px;
+    height: 3px;
+    font-weight: bold;
+    position: absolute;
+    right: 5px;
+    top: 23px;
+    z-index: 2;
+}
 
+  .button-next:before {
+    transform: translateY(-5px) rotate(-45deg);
+  }
+  .button-next:after {
+    transform: translateY(5px) rotate(45deg);
+  }
+
+  .button-prew:before {
+    transform: translateY(-5px) rotate(45deg);
+  }
+  .button-prew:after {
+    transform: translateY(5px) rotate(-45deg);
+  }
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background: #323e53;
+}
 
 /*Section About me*/
 

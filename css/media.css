@@ -4,6 +4,9 @@
         padding: 0 0 0 10px;
     }
 
+    .button-next, .button-prew {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 992px) {
