@@ -1,1 +1,1 @@
-for(var e=document.querySelector(".mobile-menu"),t=document.querySelectorAll(".switch-menu-btn"),n=0;n<t.length;n++)t[n].addEventListener("click",function(){e.classList.toggle("hidden")});
+for(var e=document.querySelector(".mobile-menu"),t=document.querySelectorAll(".switch-menu-btn"),l=document.querySelector(".overlay"),o=0;o<t.length;o++)t[o].addEventListener("click",function(){e.classList.toggle("hidden"),l.classList.toggle("overlay-show")});l.addEventListener("click",function(){e.classList.toggle("hidden"),l.classList.toggle("overlay-show")});
