@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shop</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -18,7 +18,15 @@
             <div class="container">
                <div class="top-bar-items">
                      <div class="row justify-content-sm-between">
-                            <p>Curency : GBP <i class="fas fa-chevron-down"></i></p>
+                        <div class="currency">
+                            <button type="button" class="currency-btn">Currency : GBP <i class="fas fa-chevron-down"></i></button>
+                            <ul class="currency-menu box__dropdown">
+                                <li>USD: 26.60</li>
+                                <li>EUR: 29.95</li>
+                                <li>PLN: 7.00</li>
+                                <li>GBR: 34.7</li>
+                            </ul>
+                        </div>
                         <div class="col-md-6 col-sm-8 col-lg-5 col">
                             <div class="bascket">
                                 <a href="#">Register</a>
@@ -44,6 +52,37 @@
                                 mens
                                 <i class="fas fa-chevron-down"></i>
                             </a>
+
+                            <div class="menu-list hidden-menu">
+                                    <div class="menu-list-wrapper">
+                                        <nav class="casuals">
+                                            <h6>casuals</h6>
+                                            <ul>
+                                                <li><a href="#">Jackets</a></li>
+                                                <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                                <li><a href="#">Polo Shirts</a></li>
+                                                <li><a href="#">Sportswear</a></li>
+                                                <li><a href="#">Trousers & Chinos</a></li>
+                                                <li><a href="#">T-Shirts</a></li>
+                                            </ul>
+                                        </nav>
+                
+                                        <nav class="formal">
+                                                <h6>formal</h6>
+                                                <ul>
+                                                    <li><a href="#">Jackets</a></li>
+                                                    <li><a href="#">Shirts</a></li>
+                                                    <li><a href="#">Suits</a></li>
+                                                    <li><a href="#">Trousers</a></li>
+                                                </ul>
+                                        </nav>
+                                    </div>
+
+                                    <div class="sale">
+                                        <h3>autumn sale!</h3>
+                                        <p>up to 50% off</p>
+                                    </div>
+                                </div>
                         </li>
                         <li>
                             <a href="#">
@@ -96,7 +135,6 @@
     </header>
 
     <section class="shop">
-
         <div class="shop-wraper">
             <nav class="shop-menu">
                 <ul>
@@ -117,7 +155,7 @@
                             <img src="build/img/shopitemS.jpg" alt="">
                                 <div class="shop-nav">
                                     <a href="#" class="shop-btn">Learn more</a>
-                                    <button href="#" type="button" class="buy shop-btn"><i class="fas fa-shopping-cart"></i> Add to card</button>
+                                    <button type="button" class="buy shop-btn"><i class="fas fa-shopping-cart"></i> Add to card</button>
                                 </div>   
                         </div>
                     </div>
@@ -129,7 +167,7 @@
                                 <img src="build/img/shopitemS2.jpg" alt="">
                                 <div class="shop-nav">
                                     <a href="#" class="shop-btn">Learn more</a> 
-                                    <button href="#" class="buy shop-btn"><i class="fas fa-shopping-cart"></i> Add to card</button>   
+                                    <button class="buy shop-btn"><i class="fas fa-shopping-cart"></i> Add to card</button>   
                                 </div> 
                         </div>
                     </div>
@@ -141,7 +179,7 @@
                             <img src="build/img/shopitemB.jpg" alt="" class="">
                             <div class="shop-nav shop-nav-b">
                                     <a href="#" class="shop-btn">Learn more</a> 
-                                    <button href="#" class="buy shop-btn"><i class="fas fa-shopping-cart"></i> Add to card</button>   
+                                    <button class="buy shop-btn"><i class="fas fa-shopping-cart"></i> Add to card</button>   
                             </div>
                         </div>
                     </div> 
@@ -156,7 +194,7 @@
                                 <img src="build/img/shopitemB2.jpg" alt="">
                                 <div class="shop-nav shop-nav-b">
                                         <a href="#" class="shop-btn">Learn more</a> 
-                                        <button href="#" class="buy shop-btn"><i class="fas fa-shopping-cart"></i> Add to card</button>   
+                                        <button class="buy shop-btn"><i class="fas fa-shopping-cart"></i> Add to card</button>   
                                 </div>
                             </div>
                         </div>
@@ -168,7 +206,7 @@
                             <img src="build/img/shopitenS3.jpg" alt="">
                             <div class="shop-nav">
                                 <a href="#" class="shop-btn">Learn more</a> 
-                                <button href="#" class="buy shop-btn"><i class="fas fa-shopping-cart"></i> Add to card</button>   
+                                <button class="buy shop-btn"><i class="fas fa-shopping-cart"></i> Add to card</button>   
                             </div> 
                         </div>
                     </div>
@@ -180,7 +218,7 @@
                                 <img src="build/img/shopitemS4.jpg" alt="">
                                 <div class="shop-nav">
                                     <a href="#" class="shop-btn">Learn more</a> 
-                                    <button href="#" class="buy shop-btn"><i class="fas fa-shopping-cart"></i> Add to card</button>   
+                                    <button class="buy shop-btn"><i class="fas fa-shopping-cart"></i> Add to card</button>   
                                 </div>        
                         </div>
                     </div>
@@ -381,7 +419,6 @@
         </button>
         <nav class="mobile-navigation">
             <ul class="mobile-items">
-                <ul>
                     <li>
                         <a href="#">mens</a>
                     </li>
@@ -395,7 +432,6 @@
                     <li>
                         <a href="#">look book</a>
                     </li>
-                </ul>
             </ul>
         </nav>
 
