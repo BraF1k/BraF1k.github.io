@@ -11,7 +11,7 @@ function sendEmail(event) {
   const formData = $(event.target).serialize();
   const request = $.ajax({
     type: 'POST',
-    url: $(event.target).attr('action'),
+    url: 'contact.php',
     data: formData,
   });
   request.done((response) => {
