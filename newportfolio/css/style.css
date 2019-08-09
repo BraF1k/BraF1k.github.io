@@ -1,0 +1,341 @@
+body {
+    font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	overflow-x: hidden;
+}
+
+
+ul, li {
+    list-style-type: none
+}
+
+
+h1, h2, h3, h4, h5, h6, .button,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 500;
+    text-transform: uppercase;    
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+/*Адаптивное меню*/
+
+
+
+/*Section header*/
+
+nav {
+    background-color: #fff;
+}
+
+nav .brand-logo {
+    color: #444;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.header__logo {
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: none;
+}
+
+a.header__logo:hover {
+    color: #444;
+    text-decoration: none;
+}
+
+.header__link:hover {
+    color: #444;
+    text-decoration: none;
+}
+
+
+.nav__item {
+    display: inline-block;
+    padding: 0 15px 0 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.nav__list {
+    /* padding: 25px 0 15px 0; */
+    font-size: 18px;
+}
+
+
+.nav__item-link:hover {
+    text-decoration: none;
+    transition: all .5s ease;
+    color: #444;    
+}
+
+.nav__item-link {
+    color: #444;
+}
+
+
+/*Hello section*/
+
+/* .hello-section {
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100px;
+} */
+
+/* .hello__content {
+    text-align: center;
+    padding-top: 230px;
+    color: #fff;
+}
+
+.hello__title {
+    font-size: 55px;
+}
+
+.hello__paragraph {
+    font-size: 25px;
+}
+
+.hello__fadown {
+    font-size: 55px;
+    font-weight: 100;
+    padding-top: 170px;
+} */
+
+.hello__parallax {
+    height: 720px;
+}
+
+
+/*Section service*/
+
+.service-section {
+    background-color: #009688;
+    padding: 100px 0;
+}
+
+.service {
+    text-align: center;
+    color: #fff;
+}
+
+.service__title {
+    padding-bottom: 50px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.service-box__fa {
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+/*Section portfolio*/
+
+.portfolio {
+    margin: 70px 0;
+}
+
+.portfolio-container {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.portfolio-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.img-before:hover:before {
+    background-color: rgba(0, 150, 136, .8);
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.img-before:hover a{
+    display: block;
+}
+
+.img-before::before {
+    background-color: rgba(0, 150, 136, 0);
+    position: absolute;
+    content: '';
+    width: 92%;
+    height: 100%;
+    top: 0;
+    left: 15px;
+}
+
+.img-before a {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    text-transform: uppercase;
+    color: #ffab40;
+    display: none;
+}
+
+.img-before a:hover {
+    color: #ffab40;
+    transition: all .5s ease;
+}
+
+.portfolio-box {
+    padding-bottom: 30px;
+}
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio__title {
+    padding-bottom: 30px;
+    font-size: 45px;
+    color: #444;
+}
+
+.portfolio-box__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-action > a {
+    margin-left: 18px;
+}
+
+.card .card-image img {
+    min-height: 150px;
+}
+/*Section About me*/
+
+.about {
+    background-color: #009688;
+    color: #fff;
+    padding: 70px 0 50px 0;
+}
+
+.about__top {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.about__paragraph {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+
+/*Section contacts*/
+
+.contacts-section {
+    padding: 100px 0 100px 0;
+}
+
+.contacts__title {
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+
+.contacts__form {
+    text-align: center;
+    width: 100%;
+}
+
+.contacts__button {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: #323e53;
+    border: 1px solid #323e53;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    margin-top: 20px;
+}
+
+.contacts__button:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #323e53;
+    transition: all .5s ease;
+}
+
+
+
+/* .contacts__input {
+    width: 50%;
+    height: 42px;
+    margin-bottom: 30px;
+    outline: none;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #323e53;
+    padding: 5px;
+}
+
+.contacts__input:focus {
+    border: 1px solid #323e53;
+} */
+
+/* ::-webkit-input-placeholder {
+    text-transform: capitalize;
+    color: #ccc;
+    padding-left: 10px;
+}
+
+.contacts__taxtarea {
+    height: 145px;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+}
+
+.contacts__taxtarea:focus {
+    border: 1px solid #323e53;
+} */
+
+
+/*Footer*/
+
+.footer {
+    background-color: #009688;
+    color: #fff;
+}
+
+.footer__paragraph {
+    padding-top: 15px;
+}
+
+.footer__create {
+    padding-top: 20px;
+}
+
+.footer__links {
+    padding-top: 20px;
+}
+
+.footer__link {
+    font-size: 20px;
+    padding-right: 15px;
+    color: #fff;
+}
+
+.footer__link:hover {
+    transition: all .5s ease;
+    color: #01a0de;
+}

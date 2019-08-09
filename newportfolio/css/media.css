@@ -1,0 +1,49 @@
+@media screen and (max-width: 1200px) {
+
+    .nav__item {
+        padding: 0 8px 0 8px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+
+    .portfolio__title {
+        font-size: 35px;
+    }
+
+    nav .brand-logo {
+        left: 9%;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hello__title {
+        font-size: 12vw;
+    }
+    .hello__paragraph {
+        font-size: 5vw;
+    }
+
+    .hello__fadown {
+        font-size: 45px;
+    }
+
+    .about__title {
+        font-size: 35px;
+    }
+
+}
