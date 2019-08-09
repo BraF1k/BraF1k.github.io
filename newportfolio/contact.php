@@ -14,9 +14,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		exit;
 	}
 
-	$recipient = "alexandr.kazakov1@gmail.com"; // Замените на свой email
+	$recipient = "sergeyburiak55@gmail.com"; // Замените на свой email
 
-	$subject = "Письмо с сайта erweb.ru, от посетителя: $name"; // Замените на адрес своего сайта
+	$subject = "Письмо с сайта brafik.github.io, от посетителя: $name"; // Замените на адрес своего сайта
 
 	$email_content = "От кого: $name\n\n";
 	$email_content .= "Телефон отправителя: $tel\n\n";
