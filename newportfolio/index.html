@@ -185,18 +185,18 @@
       <div class="row justify-content-center">
 
 
-          <form action="js/mail.php" method="POST" class="contacts__form">
+          <form action="js/ajax.js" method="POST" class="contacts__form">
 
                 <div class="row">
                     <div class="col-md-6">
                         <div class="input-field">
-                            <input id="first_name" type="text" name="user_name" class="validate contacts__input">
+                            <input id="first_name" type="text" name="contact-name" class="validate contacts__input">
                             <label for="first_name">Имя</label>
                           </div>
                     </div>
                     <div class="col-md-6">
                         <div class="input-field">
-                            <input id="last_name" type="text" name="surname" class="contacts__input validate">
+                            <input id="last_name" type="text" name="contact-surname" class="contacts__input validate">
                             <label for="last_name">Фамилия</label>
                           </div>
                     </div>
@@ -205,20 +205,20 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="input-field">
-                                <input id="topic" type="text" name="topic" class="validate contacts__input">
+                                <input id="topic" type="text" name="contact-topic" class="validate contacts__input">
                                 <label for="topic">Тема</label>
                               </div>
                         </div>
                         <div class="col-md-6">
                             <div class="input-field">
-                                <input id="email" type="text" name="email" class="contacts__input validate">
+                                <input id="email" type="text" name="contact-email" class="contacts__input validate">
                                 <label for="email">Почта</label>
                               </div>
                         </div>
                     </div>
 
                     <div class="input-field">
-                        <textarea id="textarea" class="materialize-textarea contacts__input" name="textarea" data-length="500"></textarea>
+                        <textarea id="textarea" class="materialize-textarea contacts__input" name="contact-message" data-length="500"></textarea>
                         <label for="textarea">Сообщение</label>
                     </div>
 
