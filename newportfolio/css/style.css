@@ -18,9 +18,38 @@ h1, h2, h3, h4, h5, h6, .button,
     text-transform: uppercase;    
 }
 
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .row {
     margin-bottom: 0;
 }
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    display: none;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-4000px);
+    z-index: 4;
+}
+
+.overlay-show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 
 /*Адаптивное меню*/
 
@@ -98,10 +127,6 @@ a.header__logo:hover {
     color: #fff;
 }
 
-.hello__title {
-    font-size: 55px;
-}
-
 .hello__paragraph {
     font-size: 25px;
 }
@@ -112,10 +137,106 @@ a.header__logo:hover {
     padding-top: 170px;
 } */
 
-.hello__parallax {
-    height: 720px;
+.hello__brackets {
+    color: #007bff;
+    font-size: 70px;
 }
 
+.hello__content {
+    display: flex;
+    justify-content: center;
+    margin-top: 270px;
+}
+
+.hello__parallax button:focus {
+    outline: none;
+}
+
+
+.hello__title {
+    color: #fff;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.hello__parallax {
+    height: 722px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+
+/* -------------------------------------------------------------------------
+   begin Scroll Down Button
+ * ------------------------------------------------------------------------- */
+ button.scroll_down {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 50px;
+    width: 30px;
+    bottom: 60px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+  button.scroll_down:before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: scroll_down_btn-animation 2s infinite;
+    animation: scroll_down_btn-animation 2s infinite;
+    box-sizing: border-box;
+  }
+  
+  @keyframes scroll_down_btn-animation {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes scroll_down_btn-animation {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* -------------------------------------------------------------------------
+     end Scroll Down Button 
+   * ------------------------------------------------------------------------- */
 
 /*Section service*/
 
@@ -339,3 +460,145 @@ a.header__logo:hover {
     transition: all .5s ease;
     color: #01a0de;
 }
+
+/* Бургер меню  */
+
+.hidden-menu {
+    display: none;
+}
+
+.menu-btn {
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 3%;
+        height: 50px;
+        width: 50px; 
+        cursor: pointer;
+    }
+    
+    .menu-btn span,
+    .menu-btn span::before, 
+    .menu-btn span::after {
+        width: 40px;
+        height: 2px;
+        background-color: #222;
+        position: absolute;
+        top: 50%; margin-top: -2px;
+        left: 50%;margin-left: -20px;
+        
+    }
+    
+    .menu-btn span::before, 
+    .menu-btn span::after {
+        content: "";
+        display: block;
+    }
+    
+    .menu-btn span::before {
+        transform: translateY(-8px);
+    }
+    
+    .menu-btn span::after {
+        transform: translateY(8px);
+    
+    }
+
+/* Конец бургера */
+
+/* Мобильное меню */
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    height: 100%;
+    width: 320px;
+    transition: all 0.3s ease;
+    display: none;
+    z-index: 5;
+}
+
+.hidden {
+    transform: translateX(350px);
+}
+
+
+.menu-close-btn {
+    position: absolute;
+    top: 57px;
+    right: 36px;
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    transform: translateX(0px);
+    transform: translateY(-50%);
+}
+
+
+.mobile-items {
+    text-transform: uppercase;
+    margin-top: 100px;
+    padding: 0;
+}
+
+.mobile-items li {
+    padding-bottom: 12px;
+    font-size: 15px;
+}
+
+.sandwich-btn {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    width: 32px;
+    height: 32px;
+  }
+
+.sandwich-btn:before, .sandwich-btn:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #222;
+  }
+
+  .sandwich-btn:before {
+    transform: rotate(45deg);
+  }
+
+  .sandwich-btn:after {
+    transform: rotate(-45deg);
+  }
+
+  .mobile-menu button:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+.mobile-items li a {
+    text-decoration-line: none;
+    display: block;
+    text-align: left;
+    line-height: 48px;
+    height: 48px;
+    padding-left: 60px;
+}
+
+.mobile-items li a:hover{
+    background-color: rgba(0,0,0,0.05);  
+    transition: all .3s ease;
+    color: #007bff;
+    
+}
+
+.mobile-items li {
+    padding-bottom: 0px;
+    font-size: 15px;
+    line-height: 48px;
+}
+
+
+/* Конец мобильного меню */

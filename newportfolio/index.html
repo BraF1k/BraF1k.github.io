@@ -14,7 +14,8 @@
 </head>
 
 <body>
-
+    <div class="overlay">
+    </div>
 
     <header class="header">
             
@@ -59,23 +60,40 @@
                 </ul>
                 </div>
               </nav>
+
+            <a class="menu-btn switch-menu-btn">
+                <span></span>
+            </a>
     </header>
     
     <section class="hello-section"  id="home">
 
         <div class="parallax-container hello__parallax">
             <div class="parallax"><img src="img/parallax-6.jpg">
-            <p>Some text to check how it works</p>
             </div>
+
+        <div class="hello__content">
+
+            <h1 class="hello__title">
+                <span class="hello__brackets">{</span>добро пожаловать!<span class="hello__brackets">}</span>
+            </h1>
+
+
+            
+        </div> 
+
+        <!-- Scroll BTN -->
+            <button type="button" class="scroll_down" id="scroll_down"></button>
+        <!-- END Scroll BTN -->
         </div>
 <!-- 
-        <div class="hello__content">
+        
 
             <h1 class="hello__title">добро пожаловать!</h1>
             <p class="hello__paragraph">Рад видеть вас у себя на сайте.</p>
             <i class="fas fa-chevron-down hello__fadown"></i>
 
-        </div> -->
+        -->
 
     </section>
     
@@ -185,18 +203,18 @@
       <div class="row justify-content-center">
 
 
-          <form action="js/ajax.js" method="POST" class="contacts__form">
+          <form action="js/mail.php" method="POST" class="contacts__form">
 
                 <div class="row">
                     <div class="col-md-6">
                         <div class="input-field">
-                            <input id="first_name" type="text" name="contact-name" class="validate contacts__input">
+                            <input id="first_name" type="text" name="user_name" class="validate contacts__input">
                             <label for="first_name">Имя</label>
                           </div>
                     </div>
                     <div class="col-md-6">
                         <div class="input-field">
-                            <input id="last_name" type="text" name="contact-surname" class="contacts__input validate">
+                            <input id="last_name" type="text" name="surname" class="contacts__input validate">
                             <label for="last_name">Фамилия</label>
                           </div>
                     </div>
@@ -205,20 +223,20 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="input-field">
-                                <input id="topic" type="text" name="contact-topic" class="validate contacts__input">
+                                <input id="topic" type="text" name="topic" class="validate contacts__input">
                                 <label for="topic">Тема</label>
                               </div>
                         </div>
                         <div class="col-md-6">
                             <div class="input-field">
-                                <input id="email" type="text" name="contact-email" class="contacts__input validate">
+                                <input id="email" type="text" name="email" class="contacts__input validate">
                                 <label for="email">Почта</label>
                               </div>
                         </div>
                     </div>
 
                     <div class="input-field">
-                        <textarea id="textarea" class="materialize-textarea contacts__input" name="contact-message" data-length="500"></textarea>
+                        <textarea id="textarea" class="materialize-textarea contacts__input" name="textarea" data-length="500"></textarea>
                         <label for="textarea">Сообщение</label>
                     </div>
 
@@ -229,7 +247,7 @@
 
 
 
-                    <!-- Добавил файл в  -->
+
 
 
 
@@ -282,6 +300,26 @@
 
 </footer>
 
+
+<!-- Мобильное меню -->
+
+<div class="mobile-menu hidden">
+    <button type="button" class="switch-menu-btn menu-close-btn">
+        <span class="sandwich-btn"></span>
+    </button>
+    <div class="mobile-navigation">
+      <ul class="mobile-items">
+        <li class="mobile-menu__item"><a href="#home" class="mobile-menu__item-link">Главная</a></li>
+        <li class="mobile-menu__item"><a href="#service" class="mobile-menu__item-link">Услуги</a></li>
+        <li class="mobile-menu__item"><a href="#portfolio" class="mobile-menu__item-link">Портфолио</a></li>
+        <li class="mobile-menu__item"><a href="#about" class="mobile-menu__item-link">Обо мне</a></li>
+        <li class="mobile-menu__item"><a href="#contacts" class="mobile-menu__item-link">Контакты</a></li>
+      </ul>
+    </div>
+  
+</div>
+
+<!-- Конец мобильного меню -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/materialize.min.js"></script>
