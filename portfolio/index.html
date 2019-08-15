@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="build/css/all.css">
+    <link rel="stylesheet" href="build/css/main.css"><!-- Стили нового bootstrap 4.3 подтянул -->
 </head>
 
 <body>
 
     <!-- <header></header> -->
-    <section class="hello">
+    <section class="section section_hello">
 
-        <div class="container">        
-        <h1 class="hello__title">
-            <span class="hello__brackets">{</span>
-                Добро пожаловать!
-            <span class="hello__brackets">}</span>
-        </h1>
+        <div class="container">
+            <!-- Begin welcom-box -->
+            <div class="welcome-box">
+                <h2 class="welcome-box__title"><!-- Изменил заголовок на h2 h1 задам на логотип -->
+                    Добро пожаловать!<!-- Скобки реализовал через before & after -->
+                </h2>
+            </div>
+            <!-- End welcom-box -->
 
-        <button class="hello__btn" type="button"></button>
-    </div>
+            <button class="btn_animate" type="button"></button> <!-- Btn-изменит кнопку, убрал из секции welcom-box -->
+        </div>
 
     </section>
 
