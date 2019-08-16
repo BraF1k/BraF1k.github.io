@@ -1,11 +1,57 @@
-h1,
-h2 {
-    margin: 0;
+html {
+    /* font-size: 62.5%(если не rem, то можно не писать); */
+    font-family: sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
+    color: #000;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
 }
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+::selection {
+    background-color: rgba(126, 196, 91, 0.726);
+    text-shadow: none;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+a {
+    color: #039be5;
+    -webkit-text-decoration-skip: objects;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+iframe {
+    border: none;
+}
+
 
 button {
     border: none;
@@ -20,16 +66,21 @@ button {
     outline: none;
 }
 
-.title {
+.section-header__title {
     font-weight: 400;
     font-size: 35px;
     text-transform: uppercase;
+    text-align: center;
 }
 
-.section {
+.section_p_t_b {
     padding: 50px 0;
 }
 
+.section_bg-dark-cyan {
+    background-color: #009688;
+    color: #ffffff;
+}
 
 /* Section Hello */
 
@@ -162,16 +213,11 @@ button {
 
 /* Bedin Section Service */
 
-.section_dark-cyan {
-    background-color: #009688;
-    color: #ffffff;
-}
-
-.service-box__svg {
+.service-box__icon {
     width: 60px;
 }
 
-.service-box__svg-biger {
+.service-box__icon-biger {
     width: 67px;
     padding-top: 9px;
 }
@@ -180,7 +226,7 @@ button {
     text-align: center;
 }
 
-.service-box__title {
+.section-header_m_b {
     margin-bottom: 50px;
 }
 
@@ -196,7 +242,7 @@ button {
 
 
 @media screen and (max-width: 768px) {
-    .service-box__p {
+    .service-box__description {
         width: 50%;
         margin: 15px auto;
     }
@@ -209,12 +255,13 @@ button {
         font-size: 45px;
     }
 
-    .service-box__p {
+    .service-box__description {
         width: 100%;
         margin: 15px auto;
     }
 
 }
+
 @media only screen and (max-width : 480px) {
     .welcome-box__title {
         font-size: 35px;

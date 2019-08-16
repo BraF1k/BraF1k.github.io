@@ -13,7 +13,7 @@
 <body>
 
     <!-- <header></header> -->
-    <section class="section_hello">
+    <section class="section section_hello">
 
         <div class="container">
             <!-- Begin welcome-box -->
@@ -32,15 +32,20 @@
 
     </section>
 
-    <section class="section section_dark-cyan">
+    <section class="section section__skills section_p_t_b section_bg-dark-cyan">
 
         <div class="container">
-            <div class="service-box">
-                <h2 class="title service-box__title">Мои умения</h2>
-                <div class="row">
-                    <div class="col-md-4">
+            <!-- Begin section-header -->
+            <header class="section-header section-header_m_b">
+                <h2 class="section-header__title">Мои умения</h2>
+            </header>
+            <!-- End section-header -->
 
-                        <svg class="service-box__svg" aria-hidden="true" focusable="false" data-prefix="far"
+            <!-- Begin service-box -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <svg class="service-box__icon" aria-hidden="true" focusable="false" data-prefix="far"
                             data-icon="clock" class="svg-inline--fa fa-clock fa-w-16" role="img"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="currentColor"
@@ -48,13 +53,14 @@
                             </path>
                         </svg>
 
-                        <p class="service-box__p">
+                        <p class="service-box__description">
                             Качественно и в поставленные сроки, сверстаю ваш сайт.
                         </p>
                     </div>
-                    <div class="col-md-4">
-
-                        <svg class="service-box__svg" aria-hidden="true" focusable="false" data-prefix="fab"
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <svg class="service-box__icon" aria-hidden="true" focusable="false" data-prefix="fab"
                             data-icon="adobe" class="svg-inline--fa fa-adobe fa-w-16" role="img"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="currentColor"
@@ -62,27 +68,30 @@
                             </path>
                         </svg>
 
-                        <p class="service-box__p">
+                        <p class="service-box__description">
                             Сверстаю ваш сайт по psd шаблону.
                             В работе использую методологию БЭМ.
                         </p>
                     </div>
-                    <div class="col-md-4">
-
-                        <svg class="service-box__svg service-box__svg-biger" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tv"
-                            class="svg-inline--fa fa-tv fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 640 512">
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <svg class="service-box__icon service-box__icon-biger" aria-hidden="true" focusable="false"
+                            data-prefix="fas" data-icon="tv" class="svg-inline--fa fa-tv fa-w-20" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                             <path fill="currentColor"
                                 d="M592 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h245.1v32h-160c-17.7 0-32 14.3-32 32s14.3 32 32 32h384c17.7 0 32-14.3 32-32s-14.3-32-32-32h-160v-32H592c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h512v288z">
                             </path>
                         </svg>
 
-                        <p class="service-box__p">
+                        <p class="service-box__description">
                             Сверстаю ваш сайт под любое мобильное устройство.
                         </p>
                     </div>
                 </div>
             </div>
+
+            <!-- End service-box -->
         </div>
 
     </section>
