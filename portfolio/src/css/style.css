@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,700&display=swap&subset=cyrillic');
-
 h1,
 h2 {
     margin: 0;
@@ -10,76 +8,97 @@ body {
 }
 
 button {
-    padding: 0;
     border: none;
-    font: inherit;
-    color: inherit;
     background-color: transparent;
-    cursor: pointer;
+    color: inherit;
+    font: inherit;
+    padding: 0;
 }
+
+.btn {
+    cursor: pointer;
+    outline: none;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+
+/* Section Hello */
 
 .section_hello {
     background: url('/portfolio/build/img/parallax-6.jpg');
     background-size: cover;
-    width: 100%;
-    height: 700px;
-    position: relative;
     color: #fff;
-
+    height: 722px;
+    position: relative;
+    width: 100%;
 }
 
 .section_hello:before {
-    position: absolute;
-    content: "";
     background-color: rgba(0, 0, 0, .6);
+    content: "";
     height: inherit;
+    position: absolute;
     width: inherit;
 }
 
-.welcome-box__title,
-.btn_animate {
-    position: absolute;
-    top: 50%;
+.welcome-box__title {
     left: 50%;
     margin-right: -50%;
+    position: absolute;
+    padding: 0 30px;
+    top: 50%;
     transform: translate(-50%, -50%);
 }
 
 .welcome-box__title {
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 400;
+    text-align: center;
 }
 
 .welcome-box__title::before,
 .welcome-box__title:after {
     color: #009688;
+    box-sizing: border-box;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+
 }
 
 .welcome-box__title::before {
     content: '{';
+    left: 0;
 }
 
 
 .welcome-box__title:after {
     content: '}';
+    right: 0;
 }
 
 
 .btn_animate {
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 280px;
-    left: 0;
-    right: 0;
     height: 50px;
     width: 30px;
-    bottom: 60px;
+
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     background-color: transparent;
     border: 2px solid white;
     border-radius: 20px;
-    cursor: pointer;
-    outline: none;
 }
 
 .btn_animate:before {
@@ -139,9 +158,33 @@ button {
     }
 }
 
+/* End Section Hello */
 
+/* Bedin Section Service */
 
+.section_dark-cyan {
+    background-color: #009688;
+    color: #ffffff;
+}
 
+.service-box__svg {
+    width: 60px;
+}
+
+.service-box__svg-biger {
+    width: 67px;
+    padding-top: 9px;
+}
+
+.service-box {
+    text-align: center;
+}
+
+.service-box__title {
+    margin-bottom: 50px;
+}
+
+/* End Section Service */
 
 
 /* MEDIA */
@@ -152,7 +195,12 @@ button {
 @media screen and (max-width: 992px) {}
 
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .service-box__p {
+        width: 50%;
+        margin: 15px auto;
+    }
+}
 
 @media screen and (max-width: 600px) {}
 
@@ -160,57 +208,36 @@ button {
     .welcome-box__title {
         font-size: 45px;
     }
-}
 
+    .service-box__p {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+}
 @media only screen and (max-width : 480px) {
     .welcome-box__title {
-        text-align: center;
         font-size: 35px;
     }
 
-    /* .welcome-box__title::before,
-    .welcome-box__title:after {
-        color: #009688;
-        position: absolute;
-        font-size: 70px;
-        top: 20px;
-    }
-
-    .welcome-box__title::before {
-        content: '{';
-        left: 3%;
-    }
-
-
-    .welcome-box__title:after {
-        content: '}';
-        right: 3%;
-    } */
-
 }
 
-@media only screen and (max-width : 360px) {
-    .welcome-box__title {
-        text-align: center;
-        font-size: 43px;
-    }
+
+@media only screen and (max-width : 382px) {
 
     .welcome-box__title::before,
     .welcome-box__title:after {
-        color: #009688;
-        position: absolute;
         font-size: 60px;
-        top: 10px;
     }
 
     .welcome-box__title::before {
         content: '{';
-        left: 3%;
+        left: 10px;
     }
 
 
     .welcome-box__title:after {
         content: '}';
-        right: 3%;
+        right: 10px;
     }
 }
