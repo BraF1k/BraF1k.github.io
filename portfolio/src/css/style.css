@@ -294,12 +294,87 @@ button {
     transition: all .5s ease;
 }
 
-.portfolio-box__link:hover .portfolio-box__icon{
+.portfolio-box__link:hover .portfolio-box__icon {
     opacity: 1;
 }
 
 
 /* End Portfoio section */
+
+
+/* Begin Section About-me */
+
+.about-me-box {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-me-box__focus {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* End Section About-me */
+
+/* Begin Feedback-form */
+
+.feedback-box-fields {
+    position: relative;
+}
+
+.feedback-box-fields__textarea {
+    resize: none;
+    padding: 10px 0;
+}
+
+.feedback-box-fields__input,
+.feedback-box-fields__textarea {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+}
+
+.feedback-box-fields__input:focus,
+.feedback-box-fields__textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #26a69a;
+    box-shadow: 0 1px 0 0 #26a69a;
+}
+
+
+.feedback-box-fields__label {
+    color: #9e9e9e;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    font-size: 16px;
+    cursor: text;
+    transition: color .2s ease-out, -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out, color .2s ease-out;
+    transition: transform .2s ease-out, color .2s ease-out;
+    transform-origin: 0% 100%;
+    text-align: initial;
+    transform: translateY(12px);
+}
+
+
+.feedback-box-fields_m-t {
+    margin-top: 35px;
+}
+
+.active {
+    color: #26a69a;
+    transform: translateY(-14px) scale(0.8);
+    transform-origin: 0 0;
+}
+
+
+
+
+
+/* End Feedback-form */
 
 /* MEDIA */
 
@@ -307,8 +382,8 @@ button {
 @media screen and (max-width: 1200px) {}
 
 @media screen and (max-width: 992px) {
-    
-    
+
+
     .portfolio-box__icon {
         width: 40px;
     }
@@ -325,9 +400,13 @@ button {
         margin-bottom: 30px;
     }
 
-    
+
     .portfolio-box__link:before {
         height: 98%;
+    }
+
+    .feedback-box-fields_m-t-768 {
+        margin-top: 35px;
     }
 
 }
