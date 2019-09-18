@@ -319,6 +319,10 @@ button {
     font-size: 20px;
 }
 
+.about-me-box__description:last-child {
+    margin-bottom: 0;
+}
+
 /* End Section About-me */
 
 /* Begin Feedback-form */
@@ -402,13 +406,17 @@ button {
     padding: 15px 0;
 }
 
-.links-box__svg {
+.social-box__svg {
     width: 20px;
     color: #fff;
     transition: all .3s ease;
 }
 
-.links-box_m-r {
+.social-box {
+    display: inline-block;
+}
+
+.social-box__link_m-r {
     margin-right: 20px;
 }
 
@@ -416,19 +424,19 @@ button {
     margin-top: 10px;
 }
 
-.link-box_m-l {
-    margin-left: 30px;
+.social-box_p-l{
+    padding-left: 30px;
 }
 
-.footer__description {
+.footer-copyright-box {
     margin-bottom: 0;
 }
 
-.footer_m-t {
+.social-box__svg_m-t, .creator_m-t {
     margin-top: 10px;
 }
 
-.links-box__svg:hover {
+.social-box__svg:hover {
     color: #afadad;
 }
 
